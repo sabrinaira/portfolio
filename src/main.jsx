@@ -1,10 +1,15 @@
-import React from 'react'
-import { createRoot } from 'react-dom/client'
+import { Provider } from '@/components/ui/provider';
+import React from 'react';
+// import ReactDOM from 'react-dom/client';
+import { createRoot } from 'react-dom/client';
+import App from './App';
 
-function App() {
-  return <h1>Hello World</h1>
-}
+const root = createRoot(document.getElementById('app'));
 
-const root = createRoot(document.getElementById('app'))
-
-root.render(<App />)
+root.render(
+  <React.StrictMode>
+    <Provider>
+      <App />
+    </Provider>
+  </React.StrictMode>
+);
