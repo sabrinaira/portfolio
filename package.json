@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "description": "A new revamp of my portfolio website.",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "vite",
@@ -21,8 +22,10 @@
   },
   "homepage": "https://github.com/sabrinaira/portfolio#readme",
   "dependencies": {
+    "@tailwindcss/vite": "^4.1.1",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "tailwindcss": "^4.1.1"
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^4.3.4",
