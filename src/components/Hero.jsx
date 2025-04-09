@@ -2,9 +2,8 @@ import React from 'react';
 
 export const Hero = () => {
   return (
-    <>
+    <div id="Hero">
       <h1>Hi. My name is Sabrina.</h1>
-      <h2>This is the Hero section.</h2>
-    </>
+    </div>
   );
 };
