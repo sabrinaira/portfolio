@@ -3,7 +3,7 @@ import React from 'react';
 export const Contact = () => {
   return (
     <section className='contact' id='contact'>
-      <h3>Connect with me!</h3>
+      <h2 className='title'>Connect with me!</h2>
       <nav>
         <a href='mailto:sabrinapira@yahoo.com' target='_blank'>
           Email

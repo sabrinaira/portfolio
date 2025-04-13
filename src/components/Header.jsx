@@ -9,7 +9,6 @@ export const Header = () => {
         <a href='#contact'>Contact</a>
         <a href='#'>Blog</a>
       </nav>
-      <h2>Portfolio</h2>
     </section>
   );
 };

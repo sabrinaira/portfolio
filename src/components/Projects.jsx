@@ -3,7 +3,7 @@ import React from 'react';
 export const Projects = () => {
   return (
     <section className='projects' id='projects'>
-      <h2>Projects</h2>
+      <h2 className='title'>Projects</h2>
       <div className='project-grid'>
         <div className='project-card'>
           <h3>GuardQL</h3>
@@ -38,7 +38,7 @@ export const Projects = () => {
           </p>
           <a href=''>View Project</a>
         </div>
-        <div className='project-card'>
+        {/* <div className='project-card'>
           <h3>Project</h3>
           <img src='' alt=''></img>
           <p>
@@ -70,7 +70,7 @@ export const Projects = () => {
             excepturi, laudantium pariatur tempora!
           </p>
           <a href=''>View Project</a>
-        </div>
+        </div> */}
       </div>
     </section>
   );

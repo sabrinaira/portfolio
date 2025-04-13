@@ -1,16 +1,27 @@
-$font-family: arial, sans-serif;
+$font-family: Funnel Display, arial, sans-serif;
+$font-header: Tiny5, Raleway;
+$font-hero: Sacramento;
 
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  background-color: #fdbedb;
+  background-color: #f6e3ee;
   font-family: $font-family;
 }
 
 * a {
   text-decoration: none;
+  color: #c23f71;
+}
+
+.title {
+  font-family: $font-header;
+  font-size: 1.3rem;
+  margin: 0;
+  background-color: rgb(226, 143, 183);
+  padding: 0.8rem;
 }
 
 .header {
@@ -30,41 +41,84 @@ body {
 .projects,
 .contact {
   margin-top: 1.5rem;
-  margin-inline: 4.5rem;
-  background-color: lemonchiffon;
-  padding: 1rem;
+  margin-inline: 5.5rem;
+  background-color: rgb(255, 250, 205, 0.8);
+  padding: 0;
   border-radius: 0.5rem;
+  border: 2px solid hotpink;
 }
 
 .hero {
-  display: flex;
-  justify-content: center;
+  div {
+    display: flex;
+    justify-content: center;
+  }
+  h1 {
+    font-family: $font-hero;
+    font-size: 60px;
+    margin: 0;
+  }
 }
 
 .about {
   .about-block {
     display: flex;
-    justify-content: center;
+    // justify-content: center;
+    // flex-direction: column;
+    align-items: center;
+    // text-align: center;
+    margin: 1.3rem;
     img {
       height: auto;
       width: 250px;
-      border-radius: 50%;
+      border-radius: 15%;
+      margin-bottom: 1rem;
+      border: 1px solid hotpink;
+    }
+  }
+  .about-text {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+    .tabs {
+      display: flex;
+      gap: 1rem;
+      margin-bottom: 1rem;
+
+      button {
+        padding: 0.5rem 1rem;
+        border: none;
+        background-color: lightgray;
+        border-radius: 0.25rem;
+        cursor: pointer;
+        font-weight: bold;
+
+        &.active {
+          background-color: black;
+          color: white;
+        }
+
+        &:hover {
+          background-color: darkgray;
+        }
+      }
     }
   }
 }
 
 .projects {
-  padding: 0.3rem;
+  padding-bottom: 0.3rem;
   .project-grid {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    // margin: 0.1rem;
     .project-card {
       border: 2px solid hotpink;
       border-radius: 0.5rem;
       background-color: darksalmon;
       padding: 2rem;
-      margin: 0.5rem;
+      margin: 0.6rem;
       width: 300px;
     }
   }
@@ -72,10 +126,10 @@ body {
 
 .contact {
   margin-top: 1.5rem;
-  text-align: center;
   nav {
     display: flex;
     justify-content: center;
+    margin: 1rem;
     a {
       margin-inline: 1rem;
     }
@@ -87,6 +141,10 @@ footer {
   flex-direction: column;
   margin: 2rem;
   text-align: center;
+  a {
+    font-family: $font-header;
+    font-size: 1.5rem;
+  }
   small {
     margin-top: 1.5rem;
   }
