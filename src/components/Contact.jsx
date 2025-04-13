@@ -2,8 +2,19 @@ import React from 'react';
 
 export const Contact = () => {
   return (
-    <>
-      <h2>This is the Contact section.</h2>
-    </>
+    <section className='contact' id='contact'>
+      <h3>Connect with me!</h3>
+      <nav>
+        <a href='mailto:sabrinapira@yahoo.com' target='_blank'>
+          Email
+        </a>
+        <a href='https://github.com/sabrinaira' target='_blank'>
+          GitHub
+        </a>
+        <a href='https://www.linkedin.com/in/sabrinaira/' target='_blank'>
+          LinkedIn
+        </a>
+      </nav>
+    </section>
   );
 };

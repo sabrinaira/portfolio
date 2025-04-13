@@ -1,3 +1,93 @@
+$font-family: arial, sans-serif;
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  background-color: rgb(255, 207, 226);
+  background-color: #fdbedb;
+  font-family: $font-family;
+}
+
+* a {
+  text-decoration: none;
+}
+
+.header {
+  margin-inline: 4.5rem;
+  border: 2x solid hotpink;
+  nav {
+    display: flex;
+    justify-content: right;
+    a {
+      margin-inline: 1rem;
+    }
+  }
+}
+
+.hero,
+.about,
+.projects,
+.contact {
+  margin-top: 1.5rem;
+  margin-inline: 4.5rem;
+  background-color: lemonchiffon;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+}
+
+.about {
+  .about-block {
+    display: flex;
+    justify-content: center;
+    img {
+      height: auto;
+      width: 250px;
+      border-radius: 50%;
+    }
+  }
+}
+
+.projects {
+  padding: 0.3rem;
+  .project-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    .project-card {
+      border: 2px solid hotpink;
+      border-radius: 0.5rem;
+      background-color: darksalmon;
+      padding: 2rem;
+      margin: 0.5rem;
+      width: 300px;
+    }
+  }
+}
+
+.contact {
+  margin-top: 1.5rem;
+  text-align: center;
+  nav {
+    display: flex;
+    justify-content: center;
+    a {
+      margin-inline: 1rem;
+    }
+  }
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem;
+  text-align: center;
+  small {
+    margin-top: 1.5rem;
+  }
 }

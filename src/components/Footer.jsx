@@ -2,8 +2,9 @@ import React from 'react';
 
 export const Footer = () => {
   return (
-    <>
-      <h2>This is the Footer section.</h2>
-    </>
+    <footer>
+      <a href='#header'>Return to Top</a>
+      <small>Copyright &copy; 2025 Sabrina Ira. All Rights Reserved</small>
+    </footer>
   );
 };
