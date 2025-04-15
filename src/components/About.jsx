@@ -9,7 +9,7 @@ export const About = () => {
       <div className='about-block'>
         <img src='https://imgur.com/F0nOWhf.jpg' alt='Sabrina Ira'></img>
         <div className='about-text'>
-          <div className='tab'>
+          <div className='tabs'>
             <button
               className={activeTab === 'bio' ? 'active' : ''}
               onClick={() => setActiveTab('bio')}
@@ -17,16 +17,16 @@ export const About = () => {
               Bio
             </button>
             <button
-              className={activeTab === 'education' ? 'active' : ''}
-              onClick={() => setActiveTab('education')}
-            >
-              Education
-            </button>
-            <button
               className={activeTab === 'skills' ? 'active' : ''}
               onClick={() => setActiveTab('skills')}
             >
               Skills
+            </button>
+            <button
+              className={activeTab === 'education' ? 'active' : ''}
+              onClick={() => setActiveTab('education')}
+            >
+              Education & Professional Development
             </button>
           </div>
           <div className='tab-content'>
@@ -46,26 +46,53 @@ export const About = () => {
                 </p>
               </div>
             )}
-            {activeTab === 'education' && (
-              <div className='education'>
-                <h4>Education & Professional Development</h4>
+            {activeTab === 'skills' && (
+              <div className='skills'>
                 <ul>
                   <li>
-                    Silliman University, Bachelor's in Fine Arts Major in
-                    Painting, 2019
+                    <h4>Programming Languages</h4>
+                    <p>JavaScript, TypeScript, HTML, CSS, Sass</p>
                   </li>
                   <li>
-                    Codesmith, Advanced Software Engineering Residency, 2025
+                    <h4>Frameworks & Libraries</h4>
+                    <p>
+                      React, Node.js, Express,PostgreSQL, MongoDB, GraphQL,
+                      Apollo, Docker, Webpack, Vite, Material-UI, React Router,
+                      Mongoose{' '}
+                    </p>
                   </li>
-                  <li>Queensborough Community College, 2025</li>
+                  <li>
+                    <h4>Tools</h4>
+                    <p>Git, Github, VSCode, AWS, Asana, Google Sheets</p>
+                  </li>
                 </ul>
               </div>
             )}
-            {activeTab === 'skills' && (
-              <div className='skills'>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime corporis ratione cupiditate, recusandae porro esse ut ad voluptatibus numquam odio, inventore voluptas, soluta dolores est repellat repellendus vitae expedita autem?
-                </p>
+            {activeTab === 'education' && (
+              <div className='education'>
+                <ul>
+                  <li>
+                    <b>Queensborough Community College</b>
+                    <p>
+                      <em>
+                        Software Engineering Micro-Credential Career Track in
+                        Web Development, 2025
+                      </em>
+                    </p>
+                  </li>
+                  <li>
+                    <b>Codesmith</b>
+                    <p>
+                      <em>Advanced Software Engineering Residency, 2025</em>
+                    </p>
+                  </li>
+                  <li>
+                    <b>Silliman University</b>
+                    <p>
+                      <em>Bachelor's in Fine Arts Major in Painting, 2019</em>
+                    </p>
+                  </li>
+                </ul>
               </div>
             )}
           </div>

@@ -1,0 +1,36 @@
+@media (max-width: 770px) {
+.header {
+top: 0rem;
+left: 0rem;
+gap: 0rem;
+  nav {
+    top: 0rem;
+    left: 0rem;
+    gap: 0rem;
+  }
+}
+
+  .hero,
+  .about,
+  .projects,
+  .contact {
+    width: 90%;
+    transition: 0.5s;
+  }
+
+  .about-block{
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .hero {
+    h1 {
+      font-size: 45px;
+      text-align: center;
+      transition: 0.5s;
+    }
+  }
+  .project-card {
+    width: 90%;
+  }
+}

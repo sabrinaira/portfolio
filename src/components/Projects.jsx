@@ -7,36 +7,46 @@ export const Projects = () => {
       <div className='project-grid'>
         <div className='project-card'>
           <h3>GuardQL</h3>
-          <img src='' alt=''></img>
+          <h5>2025 - Present</h5>
+          {/* <img src='' alt=''></img> */}
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta
-            necessitatibus eaque harum quae dolorum tempora atque mollitia
-            adipisci sequi, minus magni temporibus libero quo quam iusto esse,
-            nemo, et molestiae.
+            A debugging and performance monitoring tool that logs GraphQL API
+            errors, tracks slow query execution times, and provides a central
+            dashboard with search and filtering functionality for multiple
+            projects.
           </p>
-          <a href=''>View Project</a>
+          <div>
+          <a href='https://github.com/oslabs-beta/GuardQL' target='_blank'>View Project</a></div>
         </div>
         <div className='project-card'>
           <h3>ViewQueue</h3>
-          <img src='' alt=''></img>
+          <h5>2025</h5>
+          {/* <img src='' alt=''></img> */}
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
-            necessitatibus velit vero tenetur, modi unde aperiam veritatis est
-            itaque excepturi, labore facilis recusandae provident id esse?
-            Mollitia alias culpa rerum?
+            A media tracking app that lets you search, organize, and manage your
+            watchlist for movies, shows, and anime. With an intuitive interface
+            and seamless navigation, this app will make it easy to keep track of
+            what you’ve watched and what’s next on your list.
           </p>
-          <a href=''>View Project</a>
+          <div>
+          <a href='https://github.com/geodude-dudettes/ViewQueue.git' target='_blank'>
+            View Project
+          </a></div>
         </div>
         <div className='project-card'>
           <h3>Swifting Eras</h3>
-          <img src='' alt=''></img>
+          <h5>2024 - 2025</h5>
+          {/* <img src='' alt=''></img> */}
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-            Consequuntur aspernatur tenetur iusto libero at nisi officiis
-            accusantium odio maiores atque, cupiditate nesciunt molestiae, esse
-            illo veritatis cum ratione autem ipsum.
+            An interactive Taylor Swift album archive app, containing albums,
+            songs and lyrics. Built with React and React Router, the app delivers
+            smooth client-side navigation, while a Node.js/Express backend
+            connects to MongoDB to efficiently manage and serve song data.
           </p>
-          <a href=''>View Project</a>
+          <div>
+          <a href='https://github.com/sabrinaira/swifting-eras.git' target='_blank'>
+            View Project
+          </a></div>
         </div>
         {/* <div className='project-card'>
           <h3>Project</h3>

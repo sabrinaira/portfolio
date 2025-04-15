@@ -9,12 +9,14 @@ import { Footer } from './components/Footer';
 export const App = () => {
   return (
     <>
+    <div className='container'>
       <Header />
       <Hero />
       <About />
       <Projects />
       <Contact />
       <Footer />
+    </div>
     </>
   );
 };
