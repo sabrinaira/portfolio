@@ -1,6 +1,6 @@
 $font-family: Funnel Display, Open Sans, arial, sans-serif;
-$font-header: Tiny5, Raleway;
-$font-hero: Sacramento;
+$font-header: Doto, Raleway, Istok Web, Open Sans, Arial, sans-serif;
+$font-hero: Sacramento, Funnel Display, Arial, sans-serif;
 $font-project: Istok Web, Open Sans, sans-serif;
 
 html {
@@ -124,7 +124,6 @@ button {
 
 .about {
   .about-block {
-
     display: flex;
     align-items: center;
     margin: 1.3rem;
@@ -234,10 +233,23 @@ button {
         font-size: small;
         margin-bottom: 1.5rem;
       }
-      div {
+      .tools{
+        align-items: center;
+        .tool {
+          display: inline-block;
+          background-color: #8b5fb5;
+          color: #f3d9ee;
+          padding: 4px 8px;
+          margin: 4px;
+          border-radius: 12px;
+          font-size: 0.85rem;
+        }
+      }
+      .project-button {
         display: flex;
         justify-content: center;
         align-items: center;
+        margin-top: 1rem;
         a {
           background-color: #ff8fd2;
           padding: 0.5rem;
