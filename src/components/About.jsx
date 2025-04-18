@@ -11,7 +11,7 @@ export const About = () => {
       <h1 className='title'>About Me</h1>
       <div className='about-block'>
         <img
-          src='https://imgur.com/sPyCk54.jpg'
+          src='https://i.imgur.com/sPyCk54.jpeg'
           alt='Sabrina Ira'
           className='profile-pic'
         ></img>
