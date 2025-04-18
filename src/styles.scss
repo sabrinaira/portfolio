@@ -2,6 +2,7 @@ $font-family: Funnel Display, Open Sans, arial, sans-serif;
 $font-header: Doto, Raleway, Istok Web, Open Sans, Arial, sans-serif;
 $font-hero: Sacramento, Funnel Display, Arial, sans-serif;
 $font-project: Istok Web, Open Sans, sans-serif;
+$font-bio: Open Sans, arial, sans-serif;
 
 html {
   scroll-behavior: smooth;
@@ -44,8 +45,8 @@ button {
   font-size: 1.3rem;
   margin: 0;
   background: linear-gradient(to right, #e28fb7, #ffb3c6, #ffe5ec);
-  padding: 0.8rem;
-  border-radius: 0.5rem;
+  padding: 0.5rem;
+  border-radius: 0.3rem;
   box-shadow: inset 5px 5px 0px #faf6ffb6;
 }
 
@@ -62,7 +63,6 @@ button {
     a {
       margin-inline: 1rem;
       text-decoration: none;
-      // font-weight: bold;
     }
   }
 }
@@ -109,16 +109,19 @@ button {
     display: flex;
     justify-content: center;
   }
-  h1 {
+  .hero-title {
     font-family: $font-hero;
     font-size: 60px;
     margin: 0;
     transition: 1s;
+    animation: title 5s forwards;
   }
-  h1:hover {
-    color: rgb(255, 255, 255);
-    text-shadow: 0 0 9px hotpink;
-    transition: 1s;
+
+  @keyframes title {
+    100% {
+      color: rgb(255, 255, 255);
+      text-shadow: 0 0 9px hotpink;
+    }
   }
 }
 
@@ -127,24 +130,29 @@ button {
     display: flex;
     align-items: center;
     margin: 1.3rem;
-    img {
+    .profile-pic {
       height: auto;
-      width: 250px;
-      border-radius: 15%;
+      width: 220px;
+      border-radius: 1rem;
       margin-bottom: 1rem;
       border: 1px solid hotpink;
       transition: 0.3s;
+      filter: opacity(60%);
     }
-    img:hover {
+    .profile-pic:hover {
       border: 1px solid #69ffc8;
       box-shadow: 0 0 9px #69ffc8;
-      transition: 0.3s;
+      transition: 0.2s;
+      filter: opacity(100%);
     }
   }
   .about-text {
     display: flex;
     flex-direction: column;
     margin-left: 1rem;
+    color: rgb(0, 0, 0);
+    font-weight: lighter;
+    text-shadow: 0px 0px 10px white;
     .tabs {
       display: flex;
       gap: 0.5rem;
@@ -173,6 +181,14 @@ button {
       }
     }
     .tab-content {
+      .bio,
+      .skills,
+      .education {
+        background-color: rgba(221, 206, 255, 0.441);
+        padding: 0.7rem;
+        border-radius: 5px;
+        box-shadow: inset 3px 3px 0px #faf6ff55;
+      }
       .skills {
         ul {
           list-style-type: none;
@@ -188,15 +204,20 @@ button {
           }
         }
       }
-    }
-    .education {
-      ul {
-        list-style-type: none;
-        padding: 0;
-        li {
-          margin-top: -5px;
-          p {
-            margin-top: 5px;
+      .education {
+        ul {
+          list-style-type: none;
+          padding: 0;
+          li {
+            margin-top: -5px;
+            .school {
+              margin-top: 5px;
+              margin-bottom: 0px;
+            }
+            .field {
+              margin-top: 3px;
+              font-size: 14px;
+            }
           }
         }
       }
@@ -210,30 +231,41 @@ button {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    // margin: 0.1rem;
     .project-card {
       border: 1px solid rgb(0, 0, 0);
       box-shadow: inset 3px 3px 0px #faf6ff;
       border-radius: 0.5rem;
       background-color: #e7d5ff;
-      padding: 0.7rem;
       margin: 0.6rem;
-      width: 250px;
+      width: 275px;
+      padding-bottom: 0.7rem;
       transition: 0.3s;
-      h3,
-      h5,
+      .card-header {
+        margin: 0;
+        background: linear-gradient(to right, #dda0dd, #ccccff, #e3daff);
+        padding: 0.5rem;
+        border-radius: 0.3rem;
+        box-shadow: inset 3px 3px 0px #ffffff94;
+        h3 {
+          margin: 0.3rem;
+        }
+      }
       p,
+      span,
+      .tools,
       a {
         font-family: $font-project;
+        margin-left: 10px;
       }
       h5 {
-        margin: 0;
+        margin-top: 5px;
+        margin-left: 10px;
       }
       p {
         font-size: small;
         margin-bottom: 1.5rem;
       }
-      .tools{
+      .tools {
         align-items: center;
         .tool {
           display: inline-block;
@@ -245,19 +277,25 @@ button {
           font-size: 0.85rem;
         }
       }
-      .project-button {
+      .card-buttons {
         display: flex;
         justify-content: center;
         align-items: center;
         margin-top: 1rem;
-        a {
-          background-color: #ff8fd2;
-          padding: 0.5rem;
-          border-radius: 1rem;
-        }
-        a:hover {
-          background-color: #b2b3e0;
-          transition: 0.3s;
+        margin-bottom: 0.7rem;
+        .project-button {
+          // display: flex;
+          // justify-content: center;
+          a {
+            background-color: #e28fb7;
+            padding: 0.4rem;
+            border-radius: 6px;
+            box-shadow: inset 3px 3px 0px #ffffffa4;
+          }
+          a:hover {
+            background-color: #6a6ba1;
+            transition: 0.3s;
+          }
         }
       }
     }

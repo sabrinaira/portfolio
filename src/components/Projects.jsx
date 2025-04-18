@@ -8,7 +8,9 @@ export const Projects = () => {
       <div className='project-grid'>
         {projectsData.map((project, index) => (
           <div className='project-card' key={index}>
-            <h3>{project.title}</h3>
+            <div className='card-header'>
+              <h3>{project.title}</h3>
+            </div>
             <h5>{project.timeline}</h5>
             <p>{project.description}</p>
             <div className='tools'>
@@ -18,14 +20,27 @@ export const Projects = () => {
                 </span>
               ))}
             </div>
-            <div className='project-button'>
-              <a
-                href={project.repo_link}
-                target='_blank'
-                rel='noopener noreferrer'
-              >
-                View Project
-              </a>
+            <div className='card-buttons'>
+              {project.hasOwnProperty('demo') && project.demo && (
+                <div className='project-button'>
+                  <a
+                    href={project.demo}
+                    target='_blank'
+                    rel='noopener noreferrer'
+                  >
+                    Live Demo
+                  </a>
+                </div>
+              )}
+              <div className='project-button'>
+                <a
+                  href={project.repo_link}
+                  target='_blank'
+                  rel='noopener noreferrer'
+                >
+                  View Project
+                </a>
+              </div>
             </div>
           </div>
         ))}

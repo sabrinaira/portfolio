@@ -1,0 +1,18 @@
+[
+  {
+    "category": "Programming Languages",
+    "description": "JavaScript, TypeScript, HTML, CSS, Sass"
+  },
+  {
+    "category": "Frameworks & Libraries",
+    "description": "React, Node.js, Express, PostgreSQL, MongoDB, GraphQL, Apollo, Docker, Webpack, Vite, Material-UI, React Router, Mongoose"
+  },
+  {
+    "category": "Tools",
+    "description": "Git, Github, VSCode, AWS, Asana, Google Sheets"
+  },
+  {
+    "category": "Currently learning",
+    "description": "Python, SQL, jQuery, Bootstrap"
+  }
+]

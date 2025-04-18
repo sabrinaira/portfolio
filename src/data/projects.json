@@ -1,5 +1,14 @@
 [
   {
+    "title": "Guess the Number",
+    "timeline": "April 2025",
+    "img": "",
+    "description": "A simple number guessing game where the player must guess a number between 1 and 100!",
+    "tools": ["JavaScript", "HTML", "CSS"],
+    "demo": "https://sabrinaira.github.io/guess-the-number/",
+    "repo_link": "https://github.com/sabrinaira/guess-the-number"
+  },
+  {
     "title": "GuardQL",
     "timeline": "2025 - Present",
     "img": "",
@@ -20,7 +29,7 @@
     "timeline": "2024 - 2025",
     "img": "",
     "description": "An interactive Taylor Swift album archive app, containing albums, songs, and lyrics. Built with React and React Router, the app delivers smooth client-side navigation, while a Node.js/Express backend connects to MongoDB to efficiently manage and serve song data.",
-    "tools": ["React", "React Router", "Node.js", "Express", "MongoDB"],
+    "tools": ["JavaScript","React", "React Router", "Node.js", "Express", "MongoDB"],
     "repo_link": "https://github.com/sabrinaira/swifting-eras.git"
   }
 ]

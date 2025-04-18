@@ -1,4 +1,7 @@
 import { React, useState } from 'react';
+import educationData from '../data/education.json';
+import skillsData from '../data/skills.json';
+import bioData from '../data/bio.json';
 
 export const About = () => {
   const [activeTab, setActiveTab] = useState('bio');
@@ -7,7 +10,11 @@ export const About = () => {
     <section className='about' id='about'>
       <h1 className='title'>About Me</h1>
       <div className='about-block'>
-        <img src='https://imgur.com/F0nOWhf.jpg' alt='Sabrina Ira'></img>
+        <img
+          src='https://imgur.com/sPyCk54.jpg'
+          alt='Sabrina Ira'
+          className='profile-pic'
+        ></img>
         <div className='about-text'>
           <div className='tabs'>
             <button
@@ -32,66 +39,39 @@ export const About = () => {
           <div className='tab-content'>
             {activeTab === 'bio' && (
               <div className='bio'>
-                <p>
-                  I’m a software engineer based in NYC, with an artistic soul
-                  and a love for clean code. Whether I’m sketching ideas or
-                  building full-stack apps with JavaScript, React, and Express,
-                  I’m all about turning creativity into code and bringing ideas
-                  to life on the web.
-                </p>
-                <p>
-                  When I’m not coding, you’ll probably find me watching movies,
-                  crafting friendship bracelets, playing cozy video games, or
-                  creating new art!
-                </p>
+                {bioData.map((bio, index) => (
+                  <div>
+                    <p>{bio.p1}</p>
+                    <p>{bio.p2}</p>
+                  </div>
+                ))}
               </div>
             )}
             {activeTab === 'skills' && (
               <div className='skills'>
                 <ul>
-                  <li>
-                    <h4>Programming Languages</h4>
-                    <p>JavaScript, TypeScript, HTML, CSS, Sass</p>
-                  </li>
-                  <li>
-                    <h4>Frameworks & Libraries</h4>
-                    <p>
-                      React, Node.js, Express,PostgreSQL, MongoDB, GraphQL,
-                      Apollo, Docker, Webpack, Vite, Material-UI, React Router,
-                      Mongoose{' '}
-                    </p>
-                  </li>
-                  <li>
-                    <h4>Tools</h4>
-                    <p>Git, Github, VSCode, AWS, Asana, Google Sheets</p>
-                  </li>
+                  {skillsData.map((skills, index) => (
+                    <li>
+                      <h4>{skills.category}</h4>
+                      <p>{skills.description}</p>
+                    </li>
+                  ))}
                 </ul>
               </div>
             )}
             {activeTab === 'education' && (
               <div className='education'>
                 <ul>
-                  <li>
-                    <b>Queensborough Community College</b>
-                    <p>
-                      <em>
-                        Software Engineering Micro-Credential Career Track in
-                        Web Development, 2025
-                      </em>
-                    </p>
-                  </li>
-                  <li>
-                    <b>Codesmith</b>
-                    <p>
-                      <em>Advanced Software Engineering Residency, 2025</em>
-                    </p>
-                  </li>
-                  <li>
-                    <b>Silliman University</b>
-                    <p>
-                      <em>Bachelor's in Fine Arts Major in Painting, 2019</em>
-                    </p>
-                  </li>
+                  {educationData.map((education, index) => (
+                    <li>
+                      <p className="school">
+                        <b>{education.school}</b>
+                      </p>
+                      <p className="field">
+                        <em>{education.field}</em>
+                      </p>
+                    </li>
+                  ))}
                 </ul>
               </div>
             )}
