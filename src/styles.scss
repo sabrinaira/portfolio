@@ -188,6 +188,24 @@ button {
         padding: 0.7rem;
         border-radius: 5px;
         box-shadow: inset 3px 3px 0px #faf6ff55;
+        p {
+          span {
+            display: inline-block;
+            background-color: #fcb1dd;
+            color: #000000;
+            box-shadow: inset 3px 3px 0px #ffffff79;
+            padding: 4px 8px;
+            margin: 4px;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            transition: 0.2s;
+          }
+          span:hover {
+            background-color: #8b5fb5;
+            transition: 0.2s;
+            color: #ffffff;
+          }
+        }
       }
       .skills {
         ul {
@@ -211,11 +229,23 @@ button {
           li {
             margin-top: -5px;
             .school {
-              margin-top: 5px;
+              background-color: #fcb1dd;
+              color: #000000;
+              box-shadow: inset 3px 3px 0px #ffffff79;
+              padding: 4px 8px;
               margin-bottom: 0px;
+              border-radius: 4px;
+              font-size: 0.85rem;
+              transition: 0.2s;
+            }
+            .school:hover {
+              background-color: #8b5fb5;
+              transition: 0.2s;
+              color: #ffffff;
             }
             .field {
               margin-top: 3px;
+              margin-left: 6px;
               font-size: 14px;
             }
           }
@@ -271,9 +301,10 @@ button {
           display: inline-block;
           background-color: #8b5fb5;
           color: #f3d9ee;
+          box-shadow: inset 3px 3px 0px #ffffff79;
           padding: 4px 8px;
           margin: 4px;
-          border-radius: 12px;
+          border-radius: 4px;
           font-size: 0.85rem;
         }
       }

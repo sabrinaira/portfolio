@@ -53,7 +53,11 @@ export const About = () => {
                   {skillsData.map((skills, index) => (
                     <li>
                       <h4>{skills.category}</h4>
-                      <p>{skills.description}</p>
+                      <p className='skills-list'>
+                        {skills.list.map((skill, index) => (
+                          <span key={index}>{skill}</span>
+                        ))}
+                      </p>
                     </li>
                   ))}
                 </ul>
@@ -64,10 +68,10 @@ export const About = () => {
                 <ul>
                   {educationData.map((education, index) => (
                     <li>
-                      <p className="school">
+                      <p className='school'>
                         <b>{education.school}</b>
                       </p>
-                      <p className="field">
+                      <p className='field'>
                         <em>{education.field}</em>
                       </p>
                     </li>

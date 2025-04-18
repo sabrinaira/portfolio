@@ -1,14 +1,14 @@
 @media (max-width: 770px) {
-.header {
-top: 0rem;
-left: 0rem;
-gap: 0rem;
-  nav {
+  .header {
     top: 0rem;
     left: 0rem;
     gap: 0rem;
+    nav {
+      top: 0rem;
+      left: 0rem;
+      gap: 0rem;
+    }
   }
-}
 
   .hero,
   .about,
@@ -18,9 +18,14 @@ gap: 0rem;
     transition: 0.5s;
   }
 
-  .about-block{
-    flex-direction: column;
-    justify-content: center;
+  .about {
+    .about-block {
+      flex-direction: column;
+      justify-content: center;
+      .profile-pic {
+        filter: opacity(100%);
+      }
+    }
   }
 
   .hero {
