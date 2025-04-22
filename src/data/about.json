@@ -1,0 +1,58 @@
+{
+  "info": [
+    {
+      "info": "I’m a full stack developer based in NYC, with an artistic soul and a love for clean code. Whether I’m sketching ideas or building full-stack apps with JavaScript, React, and Express, I’m all about turning creativity into code and bringing ideas to life on the web."
+    }
+  ],
+  "bio": [
+    {
+      "bio1": "Previously a freelance artist and scriptwriter, I found joy in bringing creative ideas to life through illustrative artworks. This passion led me to reignite my interest in technology, where I now channel my creativity into coding.",
+      "bio2": "When I’m not coding, you’ll probably find me watching movies, crafting friendship bracelets, playing cozy video games, or creating new art!"
+    }
+  ],
+  "skills": [
+    {
+      "category": "Programming Languages",
+      "list": ["JavaScript", "TypeScript", "Python", "HTML", "CSS", "Sass"]
+    },
+    {
+      "category": "Frameworks & Libraries",
+      "list": [
+        "React",
+        "Node.js",
+        "Express",
+        "PostgreSQL",
+        "SQL",
+        "MongoDB",
+        "Mongoose",
+        "GraphQL",
+        "Apollo",
+        "Docker",
+        "Webpack",
+        "Vite",
+        "Material-UI",
+        "React Router",
+        "Bootstrap",
+        "jQuery"
+      ]
+    },
+    {
+      "category": "Tools",
+      "list": ["Git", "GitHub", "VS Code", "AWS", "Asana", "Google Sheets"]
+    }
+  ],
+  "education": [
+    {
+      "school": "Queensborough Community College",
+      "field": "Software Engineering Micro-Credential Career Track in Web Development, 2025"
+    },
+    {
+      "school": "Codesmith",
+      "field": "Advanced Software Engineering Residency, 2025"
+    },
+    {
+      "school": "Silliman University",
+      "field": "Bachelor of Fine Arts, Major in Painting, 2019"
+    }
+  ]
+}

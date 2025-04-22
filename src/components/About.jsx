@@ -1,10 +1,8 @@
 import { React, useState } from 'react';
-import educationData from '../data/education.json';
-import skillsData from '../data/skills.json';
-import bioData from '../data/bio.json';
+import { info, bio, skills, education } from '../data/about.json';
 
 export const About = () => {
-  const [activeTab, setActiveTab] = useState('bio');
+  const [activeTab, setActiveTab] = useState('info');
 
   return (
     <section className='about' id='about'>
@@ -13,36 +11,47 @@ export const About = () => {
         <img
           src='https://i.imgur.com/sPyCk54.jpeg'
           alt='Sabrina Ira'
-          className='profile-pic'
-        ></img>
+          className='profile-pic'></img>
         <div className='about-text'>
           <div className='tabs'>
             <button
+              className={activeTab === 'info' ? 'active' : ''}
+              onClick={() => setActiveTab('info')}>
+              Info
+            </button>
+            <button
               className={activeTab === 'bio' ? 'active' : ''}
-              onClick={() => setActiveTab('bio')}
-            >
-              Bio
+              onClick={() => setActiveTab('bio')}>
+              About
             </button>
             <button
               className={activeTab === 'skills' ? 'active' : ''}
-              onClick={() => setActiveTab('skills')}
-            >
+              onClick={() => setActiveTab('skills')}>
               Skills
             </button>
             <button
               className={activeTab === 'education' ? 'active' : ''}
-              onClick={() => setActiveTab('education')}
-            >
+              onClick={() => setActiveTab('education')}>
               Education & Professional Development
             </button>
           </div>
           <div className='tab-content'>
+            {activeTab === 'info' && (
+              <div className='info'>
+                {info.map((info, index) => (
+                  <div>
+                    <p className="info-p">{info.info}</p>
+                  </div>
+                ))}
+              </div>
+            )}
             {activeTab === 'bio' && (
               <div className='bio'>
-                {bioData.map((bio, index) => (
+                {bio.map((bio, index) => (
                   <div>
-                    <p>{bio.p1}</p>
-                    <p>{bio.p2}</p>
+                    <p className="bio-p">{bio.bio1}</p>
+                    <p className="bio-p">{bio.bio2}</p>
+                    <p className="bio-p">{bio.bio3}</p>
                   </div>
                 ))}
               </div>
@@ -50,7 +59,7 @@ export const About = () => {
             {activeTab === 'skills' && (
               <div className='skills'>
                 <ul>
-                  {skillsData.map((skills, index) => (
+                  {skills.map((skills, index) => (
                     <li>
                       <h4>{skills.category}</h4>
                       <p className='skills-list'>
@@ -66,7 +75,7 @@ export const About = () => {
             {activeTab === 'education' && (
               <div className='education'>
                 <ul>
-                  {educationData.map((education, index) => (
+                  {education.map((education, index) => (
                     <li>
                       <p className='school'>
                         <b>{education.school}</b>

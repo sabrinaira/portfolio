@@ -1,8 +1,22 @@
-$font-family: Funnel Display, Open Sans, arial, sans-serif;
+$font-main: Open Sans, arial, sans-serif;
 $font-header: Doto, Raleway, Istok Web, Open Sans, Arial, sans-serif;
-$font-hero: Sacramento, Funnel Display, Arial, sans-serif;
+$font-hero: Sacramento, Arial, sans-serif;
+$font-project-title: Open Sans, arial, sans-serif;
 $font-project: Istok Web, Open Sans, sans-serif;
-$font-bio: Open Sans, arial, sans-serif;
+$font-nav: Raleway, Open Sans, arial, sans-serif;
+$tab-color: #e28fb7;
+$tab-color-hover: #ffc2d1;
+$box-shadow: inset 5px 5px 0px #faf6ffb6;
+$button-shadow: inset 3px 3px 0px #ffffff79;
+$card-shadow: 0 0 9px #69ffc8;
+$text-shadow: 0px 0px 10px white;
+$about-bg: rgba(245, 241, 255, 0.308);
+$box-bg: rgba(244, 191, 206, 0.415);
+$box-bg-hover: 1px solid #ffd700;
+$border: 1px solid #eaaac7;
+$border-hover: 1px solid #69ffc8;
+$border-radius: 0.3rem;
+$button-radius: 0.2rem;
 
 html {
   scroll-behavior: smooth;
@@ -20,7 +34,9 @@ body {
   background-color: #001f3f;
   background-repeat: repeat;
   background-size: cover;
-  font-family: $font-family;
+  color: #000000;
+  font-family: $font-main;
+  font-weight: 300;
 }
 
 * a {
@@ -37,7 +53,7 @@ body {
 *a,
 .title,
 button {
-  text-shadow: 0px 0px 10px white;
+  text-shadow: $text-shadow;
 }
 
 .title {
@@ -46,7 +62,7 @@ button {
   margin: 0;
   background: linear-gradient(to right, #e28fb7, #ffb3c6, #ffe5ec);
   padding: 0.5rem;
-  border-radius: 0.3rem;
+  border-radius: $border-radius;
   box-shadow: inset 5px 5px 0px #faf6ffb6;
 }
 
@@ -61,6 +77,8 @@ button {
     right: 1rem;
     gap: 1rem;
     a {
+      font-family: $font-nav;
+      font-weight: 500;
       margin-inline: 1rem;
       text-decoration: none;
     }
@@ -87,10 +105,10 @@ button {
 .about,
 .projects,
 .contact {
-  box-shadow: inset 5px 5px 0px #faf6ffb6;
-  background-color: rgba(244, 191, 206, 0.415);
-  border-radius: 0.5rem;
-  border: 1px solid #d6247d;
+  box-shadow: $box-shadow;
+  background-color: $box-bg;
+  border-radius: $border-radius;
+  border: $border;
   transition: 0.5s;
 }
 
@@ -99,8 +117,7 @@ button {
 .about:hover,
 .projects:hover,
 .contact:hover {
-  border: 1px solid #ffd700;
-  // box-shadow: 0 0 9px #ffd700;
+  border: $box-bg-hover;
   transition: 0.5s;
 }
 
@@ -108,6 +125,7 @@ button {
   div {
     display: flex;
     justify-content: center;
+    margin: 1rem;
   }
   .hero-title {
     font-family: $font-hero;
@@ -133,40 +151,40 @@ button {
     .profile-pic {
       height: auto;
       width: 220px;
-      border-radius: 1rem;
+      border-radius: $border-radius;
       margin-bottom: 1rem;
-      border: 1px solid hotpink;
-      transition: 0.3s;
-      filter: opacity(60%);
+      border: $border;
+      transition: 0.2s;
+      opacity: 0.5;
+      filter: grayscale(100%);
     }
     .profile-pic:hover {
-      border: 1px solid #69ffc8;
-      box-shadow: 0 0 9px #69ffc8;
+      border: $border-hover;
+      box-shadow: $card-shadow;
       transition: 0.2s;
-      filter: opacity(100%);
+      opacity: 1;
+      filter: grayscale(0%);
     }
   }
   .about-text {
     display: flex;
     flex-direction: column;
     margin-left: 1rem;
-    color: rgb(0, 0, 0);
-    font-weight: lighter;
-    text-shadow: 0px 0px 10px white;
+    text-shadow: $text-shadow;
     .tabs {
       display: flex;
-      gap: 0.5rem;
+      gap: 0.6rem;
       margin-bottom: 1rem;
 
       button {
         padding: 0.5rem 1rem;
         border: none;
-        background-color: #e28fb7;
-        box-shadow: inset 2px 2px 0px #faf6ffbb;
-        border-radius: 0.25rem;
+        background-color: $tab-color;
+        box-shadow: $button-shadow;
+        border-radius: $button-radius;
         cursor: pointer;
-        font-weight: bold;
-        transition: 0.3s;
+        font-weight: 300;
+        transition: 0.2s;
 
         &.active {
           background-color: #3c3f96;
@@ -174,30 +192,33 @@ button {
         }
 
         &:hover {
-          background-color: #ffc2d1;
-          box-shadow: inset 2px 2px 0px #faf6ff;
-          transition: 0.3s;
+          background-color: $tab-color-hover;
+          box-shadow: $button-shadow;
+          transition: 0.2s;
         }
       }
     }
     .tab-content {
+      .info,
       .bio,
       .skills,
       .education {
-        background-color: rgba(221, 206, 255, 0.441);
+        background-color: $about-bg;
         padding: 0.7rem;
-        border-radius: 5px;
+        border-radius: $border-radius;
         box-shadow: inset 3px 3px 0px #faf6ff55;
         p {
+          font-family: $font-main;
+          font-weight: 400;
           span {
             display: inline-block;
             background-color: #fcb1dd;
             color: #000000;
-            box-shadow: inset 3px 3px 0px #ffffff79;
+            box-shadow: $button-shadow;
             padding: 4px 8px;
             margin: 4px;
-            border-radius: 4px;
-            font-size: 0.85rem;
+            border-radius: $border-radius;
+            font-weight: 400;
             transition: 0.2s;
           }
           span:hover {
@@ -205,6 +226,15 @@ button {
             transition: 0.2s;
             color: #ffffff;
           }
+          em {
+            font-weight: 400;
+          }
+        }
+        .info-p {
+          font-size: 23px;
+        }
+        .bio-p {
+          font-size: 20px;
         }
       }
       .skills {
@@ -215,9 +245,13 @@ button {
             margin-top: -5px;
             h4 {
               margin-bottom: 10px;
+              font-weight: 500;
             }
             p {
               margin-top: -5px;
+              span {
+                font-size: 16px;
+              }
             }
           }
         }
@@ -234,8 +268,8 @@ button {
               box-shadow: inset 3px 3px 0px #ffffff79;
               padding: 4px 8px;
               margin-bottom: 0px;
-              border-radius: 4px;
-              font-size: 0.85rem;
+              border-radius: $border-radius;
+              font-size: 1.3rem;
               transition: 0.2s;
             }
             .school:hover {
@@ -246,7 +280,7 @@ button {
             .field {
               margin-top: 3px;
               margin-left: 6px;
-              font-size: 14px;
+              font-size: 18px;
             }
           }
         }
@@ -262,9 +296,9 @@ button {
     flex-wrap: wrap;
     justify-content: center;
     .project-card {
-      border: 1px solid rgb(0, 0, 0);
+      border: $border;
       box-shadow: inset 3px 3px 0px #faf6ff;
-      border-radius: 0.5rem;
+      border-radius: $border-radius;
       background-color: #e7d5ff;
       margin: 0.6rem;
       width: 275px;
@@ -274,9 +308,10 @@ button {
         margin: 0;
         background: linear-gradient(to right, #dda0dd, #ccccff, #e3daff);
         padding: 0.5rem;
-        border-radius: 0.3rem;
+        border-radius: $border-radius;
         box-shadow: inset 3px 3px 0px #ffffff94;
         h3 {
+          font-family: $font-project-title;
           margin: 0.3rem;
         }
       }
@@ -287,12 +322,13 @@ button {
         font-family: $font-project;
         margin-left: 10px;
       }
-      h5 {
+      h4 {
+        font-family: $font-project-title;
         margin-top: 5px;
         margin-left: 10px;
       }
       p {
-        font-size: small;
+        font-size: 15px;
         margin-bottom: 1.5rem;
       }
       .tools {
@@ -304,7 +340,7 @@ button {
           box-shadow: inset 3px 3px 0px #ffffff79;
           padding: 4px 8px;
           margin: 4px;
-          border-radius: 4px;
+          border-radius: $border-radius;
           font-size: 0.85rem;
         }
       }
@@ -315,12 +351,10 @@ button {
         margin-top: 1rem;
         margin-bottom: 0.7rem;
         .project-button {
-          // display: flex;
-          // justify-content: center;
           a {
             background-color: #e28fb7;
             padding: 0.4rem;
-            border-radius: 6px;
+            border-radius: $button-radius;
             box-shadow: inset 3px 3px 0px #ffffffa4;
           }
           a:hover {
@@ -331,8 +365,8 @@ button {
       }
     }
     .project-card:hover {
-      border: 1px solid #69ffc8;
-      box-shadow: 0 0 5px #69ffc8;
+      border: $border-hover;
+      box-shadow: $card-shadow;
       transition: 0.3s;
     }
   }
@@ -345,6 +379,8 @@ button {
     justify-content: center;
     margin: 1rem;
     a {
+      font-family: $font-nav;
+      font-weight: 500;
       margin-inline: 1rem;
     }
   }
@@ -362,5 +398,6 @@ footer {
   small {
     color: whitesmoke;
     margin-top: 1.5rem;
+    font-size: 0.9rem;
   }
 }

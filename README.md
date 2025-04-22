@@ -16,6 +16,7 @@ I had a great time when I created my [very first portfolio website](https://gith
 
 ## Stretch feature(s):
 - Integrate my blog feed to connect visitors to also see my blogging site!
+- Add dark mode color scheme
 
 ## Contact
 Feel free to reach out to me!

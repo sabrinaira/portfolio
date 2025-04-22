@@ -11,7 +11,7 @@ export const Projects = () => {
             <div className='card-header'>
               <h3>{project.title}</h3>
             </div>
-            <h5>{project.timeline}</h5>
+            <h4>{project.timeline}</h4>
             <p>{project.description}</p>
             <div className='tools'>
               {project.tools.map((tool, index) => (
