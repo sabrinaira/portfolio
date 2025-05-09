@@ -9,8 +9,8 @@ export const About = () => {
       <h1 className='title'>About Me</h1>
       <div className='about-block'>
         <img
-          src='https://i.imgur.com/sPyCk54.jpeg'
-          alt='Sabrina Ira'
+          src='https://i.imgur.com/Z0gaIbq.jpeg'
+          alt='Profile Picture of Sabrina'
           className='profile-pic'></img>
         <div className='about-text'>
           <div className='tabs'>

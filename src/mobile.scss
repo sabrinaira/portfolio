@@ -23,6 +23,7 @@
       flex-direction: column;
       justify-content: center;
       .profile-pic {
+        filter: grayscale(0%);
         opacity: 1;
       }
     }
