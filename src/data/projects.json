@@ -13,7 +13,15 @@
     "timeline": "2025 - Present",
     "img": "",
     "description": "A debugging and performance monitoring tools that logs GraphQL API errors, tracks slow query execution times, and provides a central dashboard with search and filtering functionality for multiple projects.",
-    "tools": ["TypeScript", "React", "React Router", "GraphQL", "Apollo Server", "PostgreSQL"],
+    "tools": [
+      "TypeScript",
+      "React",
+      "React Router",
+      "GraphQL",
+      "Apollo Server",
+      "PostgreSQL"
+    ],
+    "demo": "https://guardql.com/",
     "repo_link": "https://github.com/oslabs-beta/GuardQL"
   },
   {
@@ -29,7 +37,15 @@
     "timeline": "2024 - 2025",
     "img": "",
     "description": "An interactive Taylor Swift album archive app, containing albums, songs, and lyrics. Built with React and React Router, the app delivers smooth client-side navigation, while a Node.js/Express backend connects to MongoDB to efficiently manage and serve song data.",
-    "tools": ["JavaScript","React", "React Router", "Node.js", "Express", "MongoDB", "Mongoose"],
+    "tools": [
+      "JavaScript",
+      "React",
+      "React Router",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "Mongoose"
+    ],
     "repo_link": "https://github.com/sabrinaira/swifting-eras.git"
   }
 ]

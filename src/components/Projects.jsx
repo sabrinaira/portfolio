@@ -28,7 +28,7 @@ export const Projects = () => {
                     target='_blank'
                     rel='noopener noreferrer'
                   >
-                    Live Demo
+                    Live Preview
                   </a>
                 </div>
               )}

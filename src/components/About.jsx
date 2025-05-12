@@ -9,7 +9,7 @@ export const About = () => {
       <h1 className='title'>About Me</h1>
       <div className='about-block'>
         <img
-          src='https://i.imgur.com/Z0gaIbq.jpeg'
+          src='https://i.imgur.com/XhpXnLG.jpeg'
           alt='Profile Picture of Sabrina'
           className='profile-pic'></img>
         <div className='about-text'>
