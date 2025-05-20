@@ -101,7 +101,6 @@ button {
 }
 
 .header,
-.hero,
 .about,
 .projects,
 .contact {
@@ -113,7 +112,6 @@ button {
 }
 
 .header:hover,
-.hero:hover,
 .about:hover,
 .projects:hover,
 .contact:hover {
@@ -129,7 +127,7 @@ button {
   }
   .hero-title {
     font-family: $font-hero;
-    font-size: 60px;
+    font-size: 80px;
     margin: 0;
     transition: 1s;
     animation: title 5s forwards;
@@ -380,8 +378,21 @@ button {
     margin: 1rem;
     a {
       font-family: $font-nav;
-      font-weight: 500;
+      font-weight: 400;
       margin-inline: 1rem;
+
+      padding: 0.5rem 1rem;
+      border: none;
+      background-color: #ffb3c6;
+      box-shadow: $button-shadow;
+      border-radius: $button-radius;
+      cursor: pointer;
+      transition: 0.2s;
+
+      &:hover {
+        background-color: #6a6ba1;
+        transition: 0.3s;
+      }
     }
   }
 }
@@ -394,6 +405,20 @@ footer {
   a {
     font-family: $font-header;
     font-size: 1.5rem;
+
+    padding: 0.5rem 1rem;
+    border: none;
+    background-color: $tab-color;
+    box-shadow: $button-shadow;
+    border-radius: $button-radius;
+    cursor: pointer;
+    font-weight: 300;
+    transition: 0.2s;
+
+    &:hover {
+      background-color: #3c3f96;
+      transition: 0.3s;
+    }
   }
   small {
     color: whitesmoke;

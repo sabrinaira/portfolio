@@ -4,7 +4,7 @@ import projectsData from '../data/projects.json';
 export const Projects = () => {
   return (
     <section className='projects' id='projects'>
-      <h2 className='title'>Projects</h2>
+      <h2 className='title'>Experience / Projects</h2>
       <div className='project-grid'>
         {projectsData.map((project, index) => (
           <div className='project-card' key={index}>

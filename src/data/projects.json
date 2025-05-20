@@ -1,7 +1,23 @@
 [
   {
-    "title": "Guess the Number",
-    "timeline": "April 2025",
+    "title": "PlanIt - To-Do List/ Task Management App",
+    "timeline": "May 2025 - Present",
+    "img": "",
+    "description": "A digital notebook for organizing daily tasks. Categorize, prioritize, and get things done with ease — all in one clean, focused space.",
+    "tools": [
+      "Python",
+      "JavaScript",
+      "Flask",
+      "Jinja",
+      "HTML",
+      "CSS",
+      "PostgreSQL"
+    ],
+    "repo_link": "https://github.com/ElianSarmiento/PlanIt-App"
+  },
+  {
+    "title": "Guess the Number Game",
+    "timeline": "Apr 2025",
     "img": "",
     "description": "A simple number guessing game where the player must guess a number between 1 and 100!",
     "tools": ["JavaScript", "HTML", "CSS"],
@@ -10,7 +26,7 @@
   },
   {
     "title": "GuardQL",
-    "timeline": "2025 - Present",
+    "timeline": "Feb 2025 - Present",
     "img": "",
     "description": "A debugging and performance monitoring tools that logs GraphQL API errors, tracks slow query execution times, and provides a central dashboard with search and filtering functionality for multiple projects.",
     "tools": [
