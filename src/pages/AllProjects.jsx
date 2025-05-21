@@ -1,17 +1,16 @@
-import React from 'react';
-// import { Header } from '../components/Header';
-// import { Contact } from '../components/Contact';
+import React, { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { Footer } from '../components/Footer';
-import projectsData from '../data/projects.json'
+import projectsData from '../data/projects.json';
 import styles from '../styles/AllProjects.module.scss';
 
 export const AllProjects = () => {
   return (
     <main className={styles.allProjectsPage}>
-      {/* <Header /> */}
       <div className={styles.titleContainer}>
         <h2 className={styles.title}>Experience / Projects</h2>
       </div>
+
       <section className={styles.allProjectsContainer} id='projects'>
         <div className={styles.projectGrid}>
           {projectsData.map((project, index) => (
@@ -54,11 +53,11 @@ export const AllProjects = () => {
           ))}
         </div>
       </section>
-      {/* <Contact /> */}
+
       <div className={styles.returnHome}>
-        <a href='/' className='view-all-button'>
+        <Link to='/' className='view-all-button'>
           Return Home
-        </a>
+        </Link>
       </div>
       <Footer />
     </main>

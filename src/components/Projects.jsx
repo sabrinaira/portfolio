@@ -47,9 +47,9 @@ export const Projects = () => {
         ))}
       </div>
       <div className='view-all'>
-        <a href='/projects' className='view-all-button'>
+        <Link to='/allprojects' className='view-all-button'>
           View All Projects
-        </a>
+        </Link>
       </div>
     </section>
   );
