@@ -8,6 +8,7 @@ $tab-color: #e28fb7;
 $tab-color-hover: #ffc2d1;
 $box-shadow: inset 5px 5px 0px #faf6ffb6;
 $button-shadow: inset 3px 3px 0px #ffffff79;
+$button-radius: 0.2rem;
 $card-shadow: 0 0 9px #69ffc8;
 $text-shadow: 0px 0px 10px white;
 $about-bg: rgba(245, 241, 255, 0.308);
@@ -16,7 +17,6 @@ $box-bg-hover: 1px solid #ffd700;
 $border: 1px solid #eaaac7;
 $border-hover: 1px solid #69ffc8;
 $border-radius: 0.3rem;
-$button-radius: 0.2rem;
 
 html {
   scroll-behavior: smooth;
@@ -365,6 +365,30 @@ button {
     .project-card:hover {
       border: $border-hover;
       box-shadow: $card-shadow;
+      transition: 0.3s;
+    }
+  }
+}
+
+.view-all {
+  display: flex;
+  justify-content: center;
+  margin: 0.5rem;
+  a {
+    font-family: $font-nav;
+    font-weight: 400;
+    margin-inline: 1rem;
+
+    padding: 0.5rem 1rem;
+    border: none;
+    background-color: #ffb3c6;
+    box-shadow: $button-shadow;
+    border-radius: $button-radius;
+    cursor: pointer;
+    transition: 0.2s;
+
+    &:hover {
+      background-color: #6a6ba1;
       transition: 0.3s;
     }
   }

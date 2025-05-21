@@ -1,0 +1,170 @@
+$font-nav: Raleway, Open Sans, arial, sans-serif;
+$font-project-title: Open Sans, arial, sans-serif;
+$font-project: Istok Web, Open Sans, sans-serif;
+$box-bg: rgba(244, 191, 206, 0.415);
+$box-shadow: inset 5px 5px 0px #faf6ffb6;
+$button-shadow: inset 3px 3px 0px #ffffff79;
+$button-radius: 0.2rem;
+$font-hero: Sacramento, Arial, sans-serif;
+$card-shadow: 0 0 9px #69ffc8;
+$border: 1px solid #eaaac7;
+$border-hover: 1px solid #69ffc8;
+$border-radius: 0.3rem;
+
+.allProjectsPage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .titleContainer {
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+    .title {
+      font-family: $font-hero;
+      font-size: 80px;
+      margin: 0;
+      transition: 1s;
+      animation: title 5s forwards;
+    }
+
+    @keyframes title {
+      100% {
+        color: rgb(255, 255, 255);
+        text-shadow: 0 0 9px hotpink;
+      }
+    }
+  }
+
+  .allProjectsContainer {
+    box-shadow: $box-shadow;
+    background-color: $box-bg;
+    border-radius: $border-radius;
+    border: $border;
+    width: 900px;
+    margin: 1.5rem;
+    padding: 0;
+    transition: 0.5s;
+    padding-bottom: 0.5rem;
+    .projectGrid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 1.5rem;
+      .projectCard {
+        border: $border;
+        box-shadow: inset 3px 3px 0px #faf6ff;
+        border-radius: $border-radius;
+        background-color: #e7d5ff;
+        margin: 0.6rem;
+        width: 275px;
+        padding-bottom: 0.7rem;
+        transition: 0.3s;
+        .cardHeader {
+          margin: 0;
+          background: linear-gradient(to right, #dda0dd, #ccccff, #e3daff);
+          padding: 0.5rem;
+          border-radius: $border-radius;
+          box-shadow: inset 3px 3px 0px #ffffff94;
+          h3 {
+            font-family: $font-project-title;
+            margin: 0.3rem;
+          }
+        }
+        p,
+        span,
+        .tools,
+        a {
+          font-family: $font-project;
+          margin-left: 10px;
+        }
+        h4 {
+          font-family: $font-project-title;
+          margin-top: 5px;
+          margin-left: 10px;
+        }
+        p {
+          font-size: 15px;
+          margin-bottom: 1.5rem;
+        }
+        .tools {
+          align-items: center;
+          .tool {
+            display: inline-block;
+            background-color: #8b5fb5;
+            color: #f3d9ee;
+            box-shadow: inset 3px 3px 0px #ffffff79;
+            padding: 4px 8px;
+            margin: 4px;
+            border-radius: $border-radius;
+            font-size: 0.85rem;
+          }
+        }
+        .cardButtons {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-top: 1rem;
+          margin-bottom: 0.7rem;
+          .projectButton {
+            a {
+              background-color: #e28fb7;
+              padding: 0.4rem;
+              border-radius: $button-radius;
+              box-shadow: inset 3px 3px 0px #ffffffa4;
+            }
+            a:hover {
+              background-color: #6a6ba1;
+              transition: 0.3s;
+            }
+          }
+        }
+      }
+      .project-card:hover {
+        border: $border-hover;
+        box-shadow: $card-shadow;
+        transition: 0.3s;
+      }
+    }
+  }
+}
+
+.returnHome {
+  margin: 1rem;
+  a {
+    font-family: $font-nav;
+    font-weight: 400;
+    margin-inline: 1rem;
+
+    padding: 0.5rem 1rem;
+    border: none;
+    background-color: #ffb3c6;
+    box-shadow: $button-shadow;
+    border-radius: $button-radius;
+    cursor: pointer;
+    transition: 0.2s;
+
+    &:hover {
+      background-color: #6a6ba1;
+      transition: 0.3s;
+    }
+  }
+}
+
+@media (max-width: 770px) {
+  .allProjectsPage {
+    .titleContainer {
+      .title {
+        font-size: 60px;
+        text-align: center;
+        transition: 0.5s;
+      }
+    }
+
+    .allProjectsContainer {
+      width: 90%;
+      transition: 0.5s;
+    }
+  }
+}

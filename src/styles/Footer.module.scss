@@ -1,0 +1,60 @@
+$font-header: Doto, Raleway, Istok Web, Open Sans, Arial, sans-serif;
+$font-nav: Raleway, Open Sans, arial, sans-serif;
+$tab-color: #e28fb7;
+$button-shadow: inset 3px 3px 0px #ffffff79;
+$button-radius: 0.2rem;
+
+.footerContainer {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem;
+  text-align: center;
+
+  .returnToTop {
+    font-family: $font-header;
+    font-size: 20px;
+    padding: 0.5rem 1rem;
+    border: none;
+    background-color: $tab-color;
+    box-shadow: $button-shadow;
+    border-radius: $button-radius;
+    cursor: pointer;
+    font-weight: 300;
+    transition: 0.2s;
+    width: 200px;
+    align-self: center;
+    &:hover {
+      background-color: #3c3f96;
+      transition: 0.3s;
+    }
+  }
+
+  .navContainer {
+    margin: 1.5rem;
+    .contactLink {
+      font-family: $font-nav;
+      font-size: 15px;
+      font-weight: 500;
+      margin-inline: 1rem;
+
+      padding: 0.5rem 1rem;
+      border: none;
+      // background-color: #ffb3c6;
+      box-shadow: $button-shadow;
+      border-radius: $button-radius;
+      cursor: pointer;
+      transition: 0.2s;
+
+      &:hover {
+        // background-color: #6a6ba1;
+        transition: 0.3s;
+      }
+    }
+  }
+
+  .small {
+    color: whitesmoke;
+    margin-top: 1.5rem;
+    font-size: 0.9rem;
+  }
+}

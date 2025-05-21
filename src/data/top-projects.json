@@ -1,0 +1,42 @@
+[
+  {
+    "title": "PlanIt - To-Do List/ Task Management App",
+    "timeline": "May 2025 - Present",
+    "img": "",
+    "description": "A digital notebook for organizing daily tasks. Categorize, prioritize, and get things done with ease — all in one clean, focused space.",
+    "tools": [
+      "Python",
+      "JavaScript",
+      "Flask",
+      "Jinja",
+      "HTML",
+      "CSS",
+      "PostgreSQL"
+    ],
+    "repo_link": "https://github.com/ElianSarmiento/PlanIt-App"
+  },
+  {
+    "title": "GuardQL",
+    "timeline": "Feb 2025 - Present",
+    "img": "",
+    "description": "A debugging and performance monitoring tools that logs GraphQL API errors, tracks slow query execution times, and provides a central dashboard with search and filtering functionality for multiple projects.",
+    "tools": [
+      "TypeScript",
+      "React",
+      "React Router",
+      "GraphQL",
+      "Apollo Server",
+      "PostgreSQL"
+    ],
+    "demo": "https://guardql.com/",
+    "repo_link": "https://github.com/oslabs-beta/GuardQL"
+  },
+  {
+    "title": "ViewQueue",
+    "timeline": "2025",
+    "img": "",
+    "description": "A media tracking app that lets you search, organize, and manage your watchlist for movies, shows, and anime. With an intuitive interface and seamless navigation, this app will make it easy to keep track of what you’ve watched and what’s next on your list.",
+    "tools": ["React", "React Router", "Node.js", "Express", "PostgreSQL"],
+    "repo_link": "https://github.com/geodude-dudettes/ViewQueue.git"
+  }
+]

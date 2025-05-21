@@ -1,5 +1,6 @@
 import React from 'react';
-import projectsData from '../data/projects.json';
+import { Link } from 'react-router-dom';
+import projectsData from '../data/top-projects.json';
 
 export const Projects = () => {
   return (
@@ -44,6 +45,11 @@ export const Projects = () => {
             </div>
           </div>
         ))}
+      </div>
+      <div className='view-all'>
+        <a href='/projects' className='view-all-button'>
+          View All Projects
+        </a>
       </div>
     </section>
   );
