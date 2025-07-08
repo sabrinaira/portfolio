@@ -1,10 +1,13 @@
 import React, { useEffect } from 'react';
-import { Link } from 'react-router-dom';
 import { Footer } from '../components/Footer';
 import projectsData from '../data/projects.json';
 import styles from '../styles/AllProjects.module.scss';
 
 export const AllProjects = () => {
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }, []);
+
   return (
     <main className={styles.allProjectsPage}>
       <div className={styles.titleContainer}>
@@ -55,9 +58,7 @@ export const AllProjects = () => {
       </section>
 
       <div className={styles.returnHome}>
-        <Link to='/' className='view-all-button'>
           Return Home
-        </Link>
       </div>
       <Footer />
     </main>

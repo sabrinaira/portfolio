@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import projectsData from '../data/top-projects.json';
 
 export const Projects = () => {
@@ -47,9 +46,9 @@ export const Projects = () => {
         ))}
       </div>
       <div className='view-all'>
-        <Link to='/allprojects' className='view-all-button'>
+
           View All Projects
-        </Link>
+
       </div>
     </section>
   );

@@ -1,21 +1,13 @@
 import React from 'react';
-import { useLocation } from 'react-router-dom';
 
 export const Header = () => {
-  const location = useLocation();
+  // const location = useLocation();
 
   const handleScroll = (event, id) => {
     event.preventDefault();
-
-    // This will scroll if we're on the home page ("/")
-    if (location.pathname === '/') {
-      const element = document.getElementById(id);
-      if (element) {
-        element.scrollIntoView({ behavior: 'smooth' });
-      }
-    } else {
-      // Otherwise, navigate home first or do nothing
-      window.location.href = '/#/';
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
     }
   };
 
