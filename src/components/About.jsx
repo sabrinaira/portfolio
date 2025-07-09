@@ -9,7 +9,7 @@ export const About = () => {
       <h1 className='title'>About Me</h1>
       <div className='about-block'>
         <img
-          src='https://i.ibb.co/fV4fDKXy/sabrina-photo.jpg'
+          src='https://i.ibb.co/7dvq4zf1/sabrina-profile-photo-small.jpg'
           alt='Profile Picture of Sabrina'
           className='profile-pic'></img>
         <div className='about-text'>
@@ -32,7 +32,7 @@ export const About = () => {
             <button
               className={activeTab === 'education' ? 'active' : ''}
               onClick={() => setActiveTab('education')}>
-              Education & Professional Development
+              Education
             </button>
           </div>
           <div className='tab-content'>

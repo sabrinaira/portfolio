@@ -1,13 +1,23 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import projectsData from '../data/top-projects.json';
+import React, { useState } from 'react';
+import topProjects from '../data/top-projects.json';
+import allProjects from '..//data/projects.json';
 
 export const Projects = () => {
+  const [showAll, setShowAll] = useState(false);
+
+  if (showAll)
+    window.scrollTo({
+      top: document.getElementById('projects').offsetTop,
+      behavior: 'smooth',
+    });
+
+  const projectsToDisplay = showAll ? allProjects : topProjects;
+
   return (
     <section className='projects' id='projects'>
       <h2 className='title'>Experience / Projects</h2>
       <div className='project-grid'>
-        {projectsData.map((project, index) => (
+        {projectsToDisplay.map((project, index) => (
           <div className='project-card' key={index}>
             <div className='card-header'>
               <h3>{project.title}</h3>
@@ -46,10 +56,13 @@ export const Projects = () => {
           </div>
         ))}
       </div>
-      <div className='view-all'>
-        <Link to='/allprojects' className='view-all-button'>
-          View All Projects
-        </Link>
+      <div className='view-all' onClick={() => setShowAll(!showAll)}>
+        <button
+          className='view-all-button'
+          onClick={() => setShowAll(!showAll)}
+        >
+          {showAll ? 'Show Less' : 'View All Projects'}
+        </button>
       </div>
     </section>
   );

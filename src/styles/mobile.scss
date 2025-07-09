@@ -19,6 +19,10 @@
   }
 
   .about {
+    .about-text {
+      justify-content: center;
+      align-items: center;
+    }
     .about-block {
       flex-direction: column;
       justify-content: center;
