@@ -1,7 +1,7 @@
 [
   {
     "title": "PlanIt - To-Do List/ Task Management App",
-    "timeline": "May 2025 - Present",
+    "timeline": "May 2025",
     "img": "",
     "description": "A digital notebook for organizing daily tasks. Categorize, prioritize, and get things done with ease — all in one clean, focused space.",
     "tools": [
@@ -17,7 +17,7 @@
   },
   {
     "title": "GuardQL",
-    "timeline": "Feb 2025 - Present",
+    "timeline": "Jan 2025 - Apr 2025",
     "img": "",
     "description": "A debugging and performance monitoring tools that logs GraphQL API errors, tracks slow query execution times, and provides a central dashboard with search and filtering functionality for multiple projects.",
     "tools": [
@@ -31,12 +31,20 @@
     "demo": "https://guardql.com/",
     "repo_link": "https://github.com/oslabs-beta/GuardQL"
   },
-  {
-    "title": "ViewQueue",
-    "timeline": "2025",
+ {
+    "title": "Swifting Eras",
+    "timeline": "Dec 2024 - Jan 2025",
     "img": "",
-    "description": "A media tracking app that lets you search, organize, and manage your watchlist for movies, shows, and anime. With an intuitive interface and seamless navigation, this app will make it easy to keep track of what you’ve watched and what’s next on your list.",
-    "tools": ["React", "React Router", "Node.js", "Express", "PostgreSQL"],
-    "repo_link": "https://github.com/geodude-dudettes/ViewQueue.git"
+    "description": "An interactive Taylor Swift album archive app, containing albums, songs, and lyrics. Built with React and React Router, the app delivers smooth client-side navigation, while a Node.js/Express backend connects to MongoDB to efficiently manage and serve song data.",
+    "tools": [
+      "JavaScript",
+      "React",
+      "React Router",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "Mongoose"
+    ],
+    "repo_link": "https://github.com/sabrinaira/swifting-eras.git"
   }
 ]

@@ -1,11 +1,20 @@
+$background-color: linear-gradient(
+    to bottom right,
+    #1f1b79,
+    #3c3f96,
+    #575cb2,
+    #898dc8,
+    #b2b3e0
+  );
 $font-main: Open Sans, arial, sans-serif;
-$font-header: Doto, Raleway, Istok Web, Open Sans, Arial, sans-serif;
+$font-header: Raleway, Istok Web, Open Sans, Arial, sans-serif;
 $font-hero: Sacramento, Arial, sans-serif;
 $font-project-title: Open Sans, arial, sans-serif;
 $font-project: Istok Web, Open Sans, sans-serif;
 $font-nav: Raleway, Open Sans, arial, sans-serif;
 $tab-color: #e28fb7;
 $tab-color-hover: #ffc2d1;
+$title-bg: linear-gradient(to right, #e28fb7, #ffb3c6, #ffe5ec);
 $box-shadow: inset 5px 5px 0px #faf6ffb6;
 $button-shadow: inset 3px 3px 0px #ffffff79;
 $button-radius: 0.2rem;
@@ -23,14 +32,7 @@ html {
 }
 
 body {
-  background: linear-gradient(
-    to bottom right,
-    #1f1b79,
-    #3c3f96,
-    #575cb2,
-    #898dc8,
-    #b2b3e0
-  );
+  background: $background-color;
   background-color: #001f3f;
   background-repeat: repeat;
   background-size: cover;
@@ -58,9 +60,10 @@ button {
 
 .title {
   font-family: $font-header;
+  font-weight: 300;
   font-size: 1.3rem;
   margin: 0;
-  background: linear-gradient(to right, #e28fb7, #ffb3c6, #ffe5ec);
+  background: $title-bg;
   padding: 0.5rem;
   border-radius: $border-radius;
   box-shadow: inset 5px 5px 0px #faf6ffb6;
@@ -374,12 +377,11 @@ button {
   display: flex;
   justify-content: center;
   margin: 0.5rem;
-  a {
+  .view-all-button {
     font-family: $font-nav;
+    font-size: 1rem;
     font-weight: 400;
-    margin-inline: 1rem;
-
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 1rem 0.5rem 1rem;
     border: none;
     background-color: #ffb3c6;
     box-shadow: $button-shadow;
@@ -389,6 +391,7 @@ button {
 
     &:hover {
       background-color: #6a6ba1;
+      color: #ffffff;
       transition: 0.3s;
     }
   }

@@ -1,12 +1,12 @@
 import React, { useEffect } from 'react';
-import { Footer } from '../components/Footer';
+// import { Footer } from '../components/Footer';
 import projectsData from '../data/projects.json';
 import styles from '../styles/AllProjects.module.scss';
 
 export const AllProjects = () => {
-  useEffect(() => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  }, []);
+  // useEffect(() => {
+  //   window.scrollTo({ top: 0, behavior: 'smooth' });
+  // }, []);
 
   return (
     <main className={styles.allProjectsPage}>
@@ -57,10 +57,10 @@ export const AllProjects = () => {
         </div>
       </section>
 
-      <div className={styles.returnHome}>
+      {/* <div className={styles.returnHome}>
           Return Home
       </div>
-      <Footer />
+      <Footer /> */}
     </main>
   );
 };

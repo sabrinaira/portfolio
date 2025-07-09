@@ -1,7 +1,6 @@
 import React from 'react';
 
 export const Header = () => {
-  // const location = useLocation();
 
   const handleScroll = (event, id) => {
     event.preventDefault();
