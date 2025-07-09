@@ -32,7 +32,7 @@ export const About = () => {
             <button
               className={activeTab === 'education' ? 'active' : ''}
               onClick={() => setActiveTab('education')}>
-              Education & Professional Development
+              Education
             </button>
           </div>
           <div className='tab-content'>
