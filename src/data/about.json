@@ -22,37 +22,32 @@
         "Node.js",
         "Express",
         "PostgreSQL",
-        "SQL",
         "MongoDB",
-        "Mongoose",
         "GraphQL",
         "Apollo",
-        "Docker",
-        "Webpack",
         "Vite",
+        "Webpack",
         "Material-UI",
-        "React Router",
-        "Bootstrap",
-        "jQuery"
+        "React Router"
       ]
     },
     {
       "category": "Tools",
-      "list": ["Git", "GitHub", "VS Code", "AWS", "Asana", "Google Sheets"]
+      "list": ["Git", "VS Code", "AWS", "Asana", "Google Sheets"]
     }
   ],
   "education": [
     {
       "school": "Queensborough Community College",
-      "field": "Software Engineering Micro-Credential Career Track in Web Development, 2025"
+      "field": "Software Engineering Micro-Credential Career Track in Web Development"
     },
     {
       "school": "Codesmith",
-      "field": "Advanced Software Engineering Residency, 2025"
+      "field": "Advanced Software Engineering Residency"
     },
     {
       "school": "Silliman University",
-      "field": "Bachelor of Fine Arts, Major in Painting, 2019"
+      "field": "Bachelor of Fine Arts, Major in Painting"
     }
   ]
 }
