@@ -6,8 +6,8 @@ export const About = () => {
 
   return (
     <section className='about' id='about'>
+      <h1 className='title'>About Me</h1>
       <div className='about-container'>
-        <h1 className='title'>About Me</h1>
         <div className='about-block'>
           <img
             src='https://i.ibb.co/7dvq4zf1/sabrina-profile-photo-small.jpg'

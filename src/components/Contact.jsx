@@ -4,8 +4,8 @@ import contactData from '../data/contact.json';
 export const Contact = () => {
   return (
     <section className='contact' id='contact'>
+      <h2 className='title'>Connect with me!</h2>
       <div className='contact-container'>
-        <h2 className='title'>Connect with me!</h2>
         <nav>
           {contactData.map((contact, index) => (
             <a

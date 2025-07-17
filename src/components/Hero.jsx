@@ -7,6 +7,7 @@ export const Hero = () => {
         <h1 className='hero-title'>Hi! My name is Sabrina.</h1>
       </div>
       <div className='hero-window'>
+        <h2 className='title'>Welcome</h2>
         <div className='hero-text'>
           <p>
             I’m an aspiring technical support specialist based in NYC, with an
