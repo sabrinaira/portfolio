@@ -22,8 +22,8 @@ export const Home = () => {
     <div className='container'>
       <Header />
       <Hero />
-      <About />
       <Projects />
+      <About />
       <Contact />
       <Footer />
     </div>

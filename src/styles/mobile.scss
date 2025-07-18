@@ -1,4 +1,4 @@
-@media (max-width: 770px) {
+@media (max-width: 768px) {
   .header {
     top: 0rem;
     left: 0rem;
@@ -11,10 +11,11 @@
   }
 
   .hero,
+  .hero > .hero-window,
   .about,
   .projects,
   .contact {
-    width: 90%;
+    width: 93.25%;
     transition: 0.5s;
   }
 
@@ -22,6 +23,10 @@
     .about-text {
       justify-content: center;
       align-items: center;
+
+      .tab-content {
+        width: 40rem;
+      }
     }
     .about-block {
       flex-direction: column;
@@ -35,12 +40,70 @@
 
   .hero {
     .hero-title {
-      font-size: 50px;
-      text-align: center;
+      font-size: 3.5rem;
+
       transition: 0.5s;
     }
   }
+
   .project-card {
     width: 90%;
+  }
+}
+
+@media (max-width: 430px) {
+  .about {
+    .about-text {
+      .tab-content {
+        width: 20rem;
+      }
+    }
+  }
+
+  .contact {
+    nav {
+      flex-wrap: wrap;
+      a {
+        margin: 0.5rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  .about {
+    .about-text {
+      .tab-content {
+        width: 17rem;
+      }
+    }
+  }
+
+  .projects {
+    .project-grid {
+      .project-card {
+        width: 16rem;
+        .project {
+          .card-buttons {
+            flex-wrap: wrap;
+            .project-button {
+              a {
+                padding: 0.1rem;
+                // margin: 0rem 3rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .contact {
+    nav {
+      flex-wrap: wrap;
+      a {
+        margin: 0.5rem;
+      }
+    }
   }
 }
