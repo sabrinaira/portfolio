@@ -5,11 +5,11 @@ import allProjects from '..//data/projects.json';
 export const Projects = () => {
   const [showAll, setShowAll] = useState(false);
 
-  if (showAll)
-    window.scrollTo({
-      top: document.getElementById('projects').offsetTop,
-      behavior: 'smooth',
-    });
+  // if (showAll)
+  //   window.scrollTo({
+  //     top: document.getElementById('projects').offsetTop,
+  //     behavior: 'smooth',
+  //   });
 
   const projectsToDisplay = showAll ? allProjects : topProjects;
 
@@ -59,6 +59,7 @@ export const Projects = () => {
             </div>
           ))}
         </div>
+      </div>
         <div className='view-all' onClick={() => setShowAll(!showAll)}>
           <button
             className='view-all-button'
@@ -67,7 +68,6 @@ export const Projects = () => {
             {showAll ? 'Show Less' : 'View All Projects'}
           </button>
         </div>
-      </div>
     </section>
   );
 };
