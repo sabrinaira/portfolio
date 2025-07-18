@@ -65,7 +65,7 @@ export const Projects = () => {
             className='view-all-button'
             onClick={() => setShowAll(!showAll)}
           >
-            {showAll ? 'Show Less' : 'View All Projects'}
+            {showAll ? 'View Top Projects' : 'View All Projects'}
           </button>
         </div>
     </section>

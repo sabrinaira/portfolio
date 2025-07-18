@@ -11,6 +11,7 @@ export const Header = () => {
 
   return (
     <section className='header' id='header'>
+      <h1 className='title'>Navigation</h1>
       <div className='nav-container'>
         <nav>
           <a href='#about' onClick={(e) => handleScroll(e, 'about')}>

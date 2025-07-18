@@ -1,5 +1,5 @@
 import { React, useState } from 'react';
-import { info, bio, skills, education } from '../data/about.json';
+import { bio, skills, education } from '../data/about.json';
 
 export const About = () => {
   const [activeTab, setActiveTab] = useState('bio');
@@ -16,11 +16,6 @@ export const About = () => {
           ></img>
           <div className='about-text'>
             <div className='tabs'>
-              {/* <button
-              className={activeTab === 'info' ? 'active' : ''}
-              onClick={() => setActiveTab('info')}>
-              Info
-            </button> */}
               <button
                 className={activeTab === 'bio' ? 'active' : ''}
                 onClick={() => setActiveTab('bio')}
@@ -41,22 +36,11 @@ export const About = () => {
               </button>
             </div>
             <div className='tab-content'>
-              {/* {activeTab === 'info' && (
-              <div className='info'>
-                {info.map((info, index) => (
-                  <div>
-                    <p className="info-p">{info.info}</p>
-                  </div>
-                ))}
-              </div>
-            )} */}
               {activeTab === 'bio' && (
                 <div className='bio'>
                   {bio.map((bio, index) => (
                     <div>
-                      <p className='bio-p'>{bio.bio1}</p>
-                      <p className='bio-p'>{bio.bio2}</p>
-                      <p className='bio-p'>{bio.bio3}</p>
+                      <p className='bio-p' key={index}>{bio}</p>
                     </div>
                   ))}
                 </div>
@@ -87,6 +71,9 @@ export const About = () => {
                         </p>
                         <p className='field'>
                           <em>{education.field}</em>
+                        </p>
+                        <p className='year'>
+                          <em>{education.year}</em>
                         </p>
                       </li>
                     ))}

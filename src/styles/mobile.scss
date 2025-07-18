@@ -25,7 +25,7 @@
       align-items: center;
 
       .tab-content {
-        width: 34rem;
+        width: 40rem;
       }
     }
     .about-block {
@@ -82,7 +82,18 @@
   .projects {
     .project-grid {
       .project-card {
-        width: 15rem;
+        width: 16rem;
+        .project {
+          .card-buttons {
+            flex-wrap: wrap;
+            .project-button {
+              a {
+                padding: 0.1rem;
+                // margin: 0rem 3rem;
+              }
+            }
+          }
+        }
       }
     }
   }

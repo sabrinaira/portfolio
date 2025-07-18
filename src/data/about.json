@@ -1,14 +1,9 @@
 {
-  "info": [
-    {
-      "info": "I’m a full stack developer based in NYC, with an artistic soul and a love for clean code. Whether I’m sketching ideas or building full-stack apps with JavaScript, React, and Express, I’m all about turning creativity into code and bringing ideas to life on the web."
-    }
-  ],
   "bio": [
-    {
-      "bio1": "Previously a freelance artist and scriptwriter, I found joy in bringing creative ideas to life through illustrative artworks. This passion led me to reignite my interest in technology, where I now channel my creativity into coding.",
-      "bio2": "When I’m not coding, you’ll probably find me watching movies, crafting friendship bracelets, playing cozy video games, or creating new art!"
-    }
+    "Born and raised in New York City, I've always been drawn to creative expression. This led me to pursue a Bachelor's degree in Fine Arts in the Philippines, where I immersed myself in visual storytelling and artistic techniques.",
+    "Returning to the U.S., I launched my career as a freelance artist and content creator, specializing in digital art and social media management. My creative work expanded into script writing and transcription, giving me experience across multiple forms of media and communication.",
+    "Through this journey, I rediscovered my fascination with computers and technology—a passion that had been with me since childhood, when I became my family's go-to person for technical support. This rekindled interest ultimately inspired me to pivot into web development. I began deepening my understanding of IT fundamentals while finding myself captivated by the intersection of creativity and code, where artistic vision meets technical innovation.",
+    "Today, I focus on building modern web applications using JavaScript, React, and Node.js. I'm constantly expanding my knowledge of web programming fundamentals and IT principles while exploring cutting-edge technologies that solve real-world problems and create meaningful user experiences."
   ],
   "skills": [
     {
@@ -39,15 +34,18 @@
   "education": [
     {
       "school": "Queensborough Community College",
-      "field": "Software Engineering Full-Stack Web Development"
+      "field": "Software Engineering Full-Stack Web Development",
+      "year": "2025"
     },
     {
       "school": "Codesmith",
-      "field": "Advanced Software Engineering Residency"
+      "field": "Advanced Software Engineering Residency",
+      "year": "2025"
     },
     {
       "school": "Silliman University",
-      "field": "Bachelor of Fine Arts, Major in Painting"
+      "field": "Bachelor of Fine Arts, Major in Painting",
+      "year": "2019"
     }
   ]
 }

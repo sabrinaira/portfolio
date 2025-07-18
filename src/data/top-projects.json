@@ -1,21 +1,5 @@
 [
   {
-    "title": "PlanIt - To-Do List/ Task Management App",
-    "timeline": "May 2025",
-    "img": "",
-    "description": "A digital notebook for organizing daily tasks. Categorize, prioritize, and get things done with ease — all in one clean, focused space.",
-    "tools": [
-      "Python",
-      "JavaScript",
-      "Flask",
-      "Jinja",
-      "HTML",
-      "CSS",
-      "PostgreSQL"
-    ],
-    "repo_link": "https://github.com/ElianSarmiento/PlanIt-App"
-  },
-  {
     "title": "GuardQL",
     "timeline": "Jan 2025 - Apr 2025",
     "img": "",
@@ -30,6 +14,22 @@
     ],
     "demo": "https://guardql.com/",
     "repo_link": "https://github.com/oslabs-beta/GuardQL"
+  },
+  {
+    "title": "PlanIt - To-Do List/ Task Management App",
+    "timeline": "May 2025",
+    "img": "",
+    "description": "A digital notebook for organizing daily tasks. Categorize, prioritize, and get things done with ease — all in one clean, focused space.",
+    "tools": [
+      "Python",
+      "JavaScript",
+      "Flask",
+      "Jinja",
+      "HTML",
+      "CSS",
+      "PostgreSQL"
+    ],
+    "repo_link": "https://github.com/ElianSarmiento/PlanIt-App"
   },
  {
     "title": "Swifting Eras",

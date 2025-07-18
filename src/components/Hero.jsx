@@ -10,11 +10,15 @@ export const Hero = () => {
         <h2 className='title'>Welcome</h2>
         <div className='hero-text'>
           <p>
-            I’m an aspiring technical support specialist based in NYC, with an
-            artistic soul and a love for technology. Whether I’m solving
-            technical issues, optimizing systems, or building projects with
-            tools like JavaScript, React, and NodeJS/ Express, I’m passionate
-            about making technology accessible, efficient, and user-friendly.
+            I’m a software developer based in NYC with a creative background and
+            a passion for technology. I enjoy solving technical challenges and
+            building user-friendly applications with tools like JavaScript,
+            React, and Node.js/Express.
+          </p>
+          <p>
+            I thrive in collaborative environments and enjoy supporting my
+            teammates to achieve shared goals. My focus is on making technology
+            more accessible, efficient, and intuitive for everyone. I’m always eager to learn new tools, explore new technologies, and contribute to impactful projects.
           </p>
         </div>
       </div>

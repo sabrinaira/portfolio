@@ -1,12 +1,11 @@
 $site-bg: linear-gradient(135deg, #1f1b79, #3c3f96, #575cb2, #898dc8, #b2b3e0);
 $font-main: Open Sans, arial, sans-serif;
-$font-header: Raleway, Istok Web, Open Sans, Arial, sans-serif;
+$font-header: Raleway, Open Sans, Arial, sans-serif;
 $font-body: Istok Web, Open Sans, sans-serif;
-$font-nav: Raleway, Open Sans, arial, sans-serif;
 $tab-color: #ffcaf2;
 $tab-color-hover: #c8b5ea;
 $section-title: linear-gradient(to right, #e28fb7, #ffb3c6, #ffe5ec);
-$text-shadow: 0rem 0rem 0.55rem white;
+$text-shadow: 0rem 0rem 0.5rem white;
 $button-shadow: inset 0.2rem 0.2rem 0rem #291e3e32;
 // $box-shadow: inset 5px 5px 0px #faf6ffb6;
 $box-shadow: 0rem 0rem 0.4rem #ffffff;
@@ -93,8 +92,8 @@ button {
   font-family: $font-header;
   font-weight: 500;
   font-size: 1rem;
-  margin: 0rem 0rem 0.5rem;
-  padding: 0.1rem;
+  margin: 0rem 0.5rem 0.5rem;
+  padding: 0.2rem 0 0;
   border-radius: $border-radius;
   // background: $section-title;
   // box-shadow: inset 5px 5px 0px #faf6ffb6;
@@ -104,7 +103,7 @@ button {
   @extend %glass-panel;
   position: relative;
   left: 20.5rem;
-  padding: 1rem 0.2rem 0.2rem;
+  padding: 0;
   .nav-container {
     padding: 0.5rem;
 
@@ -115,10 +114,14 @@ button {
       gap: 1rem;
 
       a {
-        font-family: $font-nav;
+        font-family: $font-header;
         font-weight: 500;
         margin-inline: 1rem;
         text-decoration: none;
+        &:hover {
+          color: white;
+          text-shadow: 0rem 0rem 0.5rem #000000;
+        }
       }
     }
   }
@@ -275,23 +278,24 @@ button {
         margin: 1rem 1rem;
         span {
           display: inline-block;
-          background-color: #fcb1dd;
+          background-color: #c8deff;
           color: #000000;
-          box-shadow: $button-shadow;
+          box-shadow: inset 3px 3px 0px #ffffff79;
+          border: $inner-border;
           padding: 4px 8px;
           margin: 4px;
           border-radius: $border-radius;
-          font-weight: 400;
+          font-weight: 100;
           transition: 0.2s;
+          cursor: default;
           &:hover {
-            background-color: #8b5fb5;
+            background-color: #fcb1dd;
             transition: 0.2s;
-            color: #ffffff;
+            // color: #ffffff;
           }
         }
         em {
           margin: 0 1rem;
-          font-weight: 400;
         }
       }
       .bio-p {
@@ -306,13 +310,13 @@ button {
           padding: 0rem 0rem;
           li {
             h4 {
-              margin-bottom: 0.9rem;
-              font-weight: 500;
+              margin-bottom: 0.5rem;
+              font-weight: 300;
             }
             p {
               margin: 0rem 1rem;
               span {
-                font-size: 1rem;
+                font-size: 0.9rem;
               }
             }
           }
@@ -324,23 +328,25 @@ button {
           padding: 0;
           li {
             .school {
-              background-color: #fcb1dd;
-              color: #000000;
+              background-color: #ffdef19f;
               box-shadow: inset 3px 3px 0px #ffffff79;
               padding: 0.1rem 0.8rem;
-              margin-bottom: 0%;
+              margin-bottom: 0.4rem;
               border-radius: $border-radius;
+              border: $inner-border;
               font-size: 1.1rem;
               transition: 0.2s;
             }
             .school:hover {
-              background-color: #8b5fb5;
+              background-color: #fcb1dd;
               transition: 0.2s;
-              color: #ffffff;
             }
             .field {
-              margin: 0.2rem 0.3rem;
-              font-size: 18px;
+              margin: 0 0 0 1rem;
+              font-size: 1.2rem;
+            }
+            .year {
+              margin: 0 0 0 1rem;
             }
           }
         }
@@ -415,8 +421,7 @@ button {
           display: flex;
           justify-content: center;
           align-items: center;
-          margin-top: 1rem;
-          margin-bottom: 0.7rem;
+          margin: 1rem auto;
           .project-button {
             a {
               background-color: $tab-color;
@@ -442,7 +447,7 @@ button {
   justify-content: center;
   margin: 0.8rem 0;
   .view-all-button {
-    font-family: $font-nav;
+    font-family: $font-header;
     font-size: 1rem;
     font-weight: 400;
     padding: 0.5rem 1rem 0.5rem 1rem;
@@ -468,14 +473,14 @@ button {
     justify-content: center;
     margin: 1rem;
     a {
-      font-family: $font-nav;
+      font-family: $font-header;
       font-weight: 400;
       margin-inline: 1rem;
 
       padding: 0.5rem 1rem;
       border: none;
       background-color: $tab-color;
-      box-shadow: $inner-box-shdw;
+      box-shadow: inset 3px 3px 0px #ffffff79;
       border-radius: $border-radius;
       cursor: pointer;
       transition: 0.2s;
@@ -493,7 +498,7 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 2rem 0rem 0rem 0rem;
+  margin: 2rem 0 0 0;
   text-align: center;
   .footer-button {
     cursor: pointer;
