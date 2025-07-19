@@ -1,0 +1,33 @@
+$site-bg: linear-gradient(135deg, #1f1b79, #3c3f96, #575cb2, #898dc8, #b2b3e0);
+$font-main: Open Sans, arial, sans-serif;
+$font-header: Raleway, Open Sans, Arial, sans-serif;
+$font-body: Istok Web, Open Sans, sans-serif;
+$tab-color: #ffcaf2;
+$tab-color-hover: #c8b5ea;
+$section-title: linear-gradient(to right, #e28fb7, #ffb3c6, #ffe5ec);
+$text-shadow: 0rem 0rem 0.5rem white;
+$button-shadow: inset 0.2rem 0.2rem 0rem #291e3e32;
+// $box-shadow: inset 5px 5px 0px #faf6ffb6;
+$box-shadow: 0rem 0rem 0.4rem #ffffff;
+$box-bg: #c1a1ce;
+$box-bg-hover: 1px solid #ece4ffb9;
+$border: 1px solid #ffffff4d;
+$border2: 0.09rem solid #5151518e;
+$border-radius: 0.2rem;
+$border-hover: 1px solid #ece4ff;
+$inner-bg: #e7d5ff;
+$inner-box-shdw: 0rem 0rem 0.2rem #0000003d;
+$inner-border: 1px solid #a74d7785;
+$button-hover: #6a6ba1 #3c3f96;
+
+%glass-panel {
+  background: #ffffff2f;
+  border: $border;
+  box-shadow: 0 4px 20px #0000004d;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  padding: 0.4rem 0.4rem 0.6rem;
+  border-radius: $border-radius;
+  margin: 2rem auto 0.8rem auto;
+  transition: 0.3s ease-in-out;
+}

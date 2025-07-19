@@ -1,0 +1,181 @@
+@use '../base/globals' as *;
+
+.about {
+  .about-block {
+    display: flex;
+    align-items: center;
+    margin: 1.3rem;
+    .profile-pic {
+      height: auto;
+      width: 220px;
+      border-radius: $border-radius;
+      margin-bottom: 1rem;
+      border: $border;
+      transition: 0.2s;
+      opacity: 0.5;
+      filter: grayscale(100%);
+    }
+    .profile-pic:hover {
+      border: $border-hover;
+      box-shadow: 0 0 9px #ece4ff;
+      transition: 0.2s;
+      opacity: 1;
+      filter: grayscale(0%);
+    }
+  }
+  .about-text {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+    text-shadow: $text-shadow;
+    .tabs {
+      display: flex;
+      gap: 0.6rem;
+      margin-bottom: 1rem;
+
+      button {
+        padding: 0.5rem 1rem;
+        border: none;
+        background-color: $tab-color;
+        box-shadow: $inner-box-shdw;
+        border-radius: $border-radius;
+        cursor: pointer;
+        font-weight: 300;
+        font-size: 1rem;
+        transition: 0.3s;
+
+        &.active {
+          background-color: $tab-color-hover;
+          // color: white;
+          box-shadow: $button-shadow;
+        }
+
+        &:hover {
+          background-color: $tab-color-hover;
+          box-shadow: $inner-box-shdw;
+          transition: 0.3s;
+        }
+      }
+    }
+    .tab-content {
+      background-color: $inner-bg;
+      box-shadow: inset 3px 3px 0px #faf6ff55;
+      border-radius: $border-radius;
+      padding: 0.5rem 0rem;
+      max-height: 14rem;
+      width: 42rem;
+      overflow-y: auto;
+      @media (max-width: 1024px) {
+        width: auto;
+      }
+      @media (max-width: 768px) {
+        width: auto;
+      }
+      @media (max-width: 430px) {
+        width: auto;
+      }
+      @media (max-width: 375px) {
+        width: auto;
+      }
+      p {
+        font-family: $font-body;
+        font-weight: 100;
+        margin: 1rem 1rem;
+        span {
+          display: inline-block;
+          background-color: #c8deff;
+          color: #000000;
+          box-shadow: inset 3px 3px 0px #ffffff79;
+          border: $inner-border;
+          padding: 4px 8px;
+          margin: 4px;
+          border-radius: $border-radius;
+          font-weight: 100;
+          transition: 0.2s;
+          cursor: default;
+          &:hover {
+            background-color: #fcb1dd;
+            transition: 0.2s;
+            // color: #ffffff;
+          }
+        }
+        em {
+          margin: 0 1rem;
+        }
+      }
+      .bio-p {
+        margin: 1rem 1rem;
+        font-size: 1.1rem;
+      }
+
+      .skills {
+        ul {
+          margin: 0rem 1rem;
+          list-style-type: none;
+          padding: 0rem 0rem;
+          li {
+            h4 {
+              margin-bottom: 0.5rem;
+              font-weight: 300;
+            }
+            p {
+              margin: 0rem 1rem;
+              span {
+                font-size: 0.9rem;
+              }
+            }
+          }
+        }
+      }
+      .education {
+        @media (max-width: 1024px) {
+          width: 40.4rem;
+        }
+        @media (max-width: 768px) {
+          width: 39.3rem;
+        }
+        @media (max-width: 430px) {
+          width: auto;
+        }
+        @media (max-width: 375px) {
+          width: auto;
+        }
+        ul {
+          // width: 100%;
+          list-style-type: none;
+          padding: 0;
+          li {
+            // width: 100%;
+            .school,
+            .field,
+            .year {
+              display: block;
+              // width: 100%;
+              box-sizing: border-box;
+            }
+            .school {
+              background-color: #ffdef19f;
+              box-shadow: inset 3px 3px 0px #ffffff79;
+              padding: 0.1rem 0.8rem;
+              margin-bottom: 0.4rem;
+              border-radius: $border-radius;
+              border: $inner-border;
+              font-size: 1.1rem;
+              transition: 0.2s;
+            }
+            .school:hover {
+              cursor: default;
+              background-color: #fcb1dd;
+              transition: 0.2s;
+            }
+            .field,
+            .year {
+              margin: 0 0 0 0;
+              padding-left: 0.8rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}

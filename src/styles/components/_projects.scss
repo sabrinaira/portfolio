@@ -1,0 +1,123 @@
+@use '../base/globals' as *;
+
+.projects {
+  .project-grid {
+    height: 35rem;
+    overflow-y: scroll;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    .project-card {
+      @extend %glass-panel;
+      background: #dac6ff71;
+      padding: 0rem 0.2rem;
+      width: 18.3rem;
+      @media (max-width: 1024px) {
+      }
+      @media (max-width: 768px) {
+        width: 90%;
+      }
+      @media (max-width: 430px) {
+        width: 87%;
+      }
+      @media (max-width: 375px) {
+        width: 86%;
+      }
+      .project-title {
+        margin: 0;
+        border-radius: $border-radius;
+        background: linear-gradient(to right, #dda0dd00, #ccccff, #e3daff);
+        h3 {
+          font-family: $font-body;
+          font-weight: 500;
+          font-size: 1rem;
+          margin: 0.1rem 0.5rem;
+          text-shadow: $text-shadow;
+        }
+      }
+      .project {
+        border: $inner-border;
+        box-shadow: $inner-box-shdw;
+        border-radius: $border-radius;
+        background-color: $inner-bg;
+        margin: 0.3rem 0rem;
+        width: auto;
+        padding: 0.3rem 1rem 1rem 1rem;
+        transition: 0.3s;
+        p,
+        span,
+        .tools,
+        a {
+          font-family: $font-body;
+          margin-left: 10px;
+        }
+        h4 {
+          font-family: $font-main;
+          font-weight: 600;
+          margin: 0.2rem 0rem;
+        }
+        p {
+          font-size: 15px;
+          margin-bottom: 1.5rem;
+        }
+        .tools {
+          align-items: center;
+          .tool {
+            display: inline-block;
+            background-color: #8b5fb5;
+            color: #f3d9ee;
+            box-shadow: inset 3px 3px 0px #ffffff79;
+            padding: 4px 8px;
+            margin: 4px;
+            border-radius: $border-radius;
+            font-size: 0.85rem;
+          }
+        }
+        .card-buttons {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin: 1rem auto;
+          .project-button {
+            a {
+              background-color: $tab-color;
+              padding: 0.4rem;
+              border: $border;
+              // border-radius: $border-radius;
+              // box-shadow: inset 3px 3px 0px #ffffffa4;
+              box-shadow: $inner-box-shdw;
+              &:hover {
+                background-color: $tab-color-hover;
+                transition: 0.3s;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.view-all {
+  display: flex;
+  justify-content: center;
+  margin: 0.8rem 0;
+  .view-all-button {
+    font-family: $font-header;
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    border: none;
+    background-color: $tab-color;
+    box-shadow: $inner-box-shdw;
+    border-radius: $border-radius;
+    cursor: pointer;
+    transition: 0.2s;
+
+    &:hover {
+      background-color: $tab-color-hover;
+      // color: #ffffff;
+      transition: 0.3s;
+    }
+  }
+}
